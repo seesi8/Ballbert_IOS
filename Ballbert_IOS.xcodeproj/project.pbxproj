@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CAD4CA82B1D78FC00579B96 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD4CA72B1D78FC00579B96 /* SettingsView.swift */; };
+		3CAD4CAC2B1EA34B00579B96 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD4CAB2B1EA34B00579B96 /* Json.swift */; };
+		3CAD4CAE2B1EA36900579B96 /* WebsocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD4CAD2B1EA36900579B96 /* WebsocketClient.swift */; };
+		3CAD4CB02B1EA3A000579B96 /* Toggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD4CAF2B1EA3A000579B96 /* Toggle.swift */; };
+		3CAD4CB22B1EB55B00579B96 /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD4CB12B1EB55B00579B96 /* SpeechRecognition.swift */; };
+		3CAD4CBC2B20159600579B96 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAD4CBB2B20159600579B96 /* Audio.swift */; };
 		3CC769BC2B1AABDA001B80E6 /* Ballbert_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC769BB2B1AABDA001B80E6 /* Ballbert_IOSApp.swift */; };
 		3CC769BE2B1AABDA001B80E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC769BD2B1AABDA001B80E6 /* ContentView.swift */; };
 		3CC769C02B1AABDB001B80E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CC769BF2B1AABDB001B80E6 /* Assets.xcassets */; };
@@ -14,6 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C823F832B24D74D00D90F89 /* Ballbert_IOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ballbert_IOS.entitlements; sourceTree = "<group>"; };
+		3CAD4CA72B1D78FC00579B96 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3CAD4CAB2B1EA34B00579B96 /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		3CAD4CAD2B1EA36900579B96 /* WebsocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsocketClient.swift; sourceTree = "<group>"; };
+		3CAD4CAF2B1EA3A000579B96 /* Toggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggle.swift; sourceTree = "<group>"; };
+		3CAD4CB12B1EB55B00579B96 /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		3CAD4CBA2B1ECB4E00579B96 /* Audio.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Audio.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3CAD4CBB2B20159600579B96 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		3CC769B82B1AABDA001B80E6 /* Ballbert_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ballbert_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC769BB2B1AABDA001B80E6 /* Ballbert_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ballbert_IOSApp.swift; sourceTree = "<group>"; };
 		3CC769BD2B1AABDA001B80E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,10 +65,18 @@
 		3CC769BA2B1AABDA001B80E6 /* Ballbert_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				3C823F832B24D74D00D90F89 /* Ballbert_IOS.entitlements */,
+				3CAD4CAD2B1EA36900579B96 /* WebsocketClient.swift */,
 				3CC769BB2B1AABDA001B80E6 /* Ballbert_IOSApp.swift */,
 				3CC769BD2B1AABDA001B80E6 /* ContentView.swift */,
+				3CAD4CBA2B1ECB4E00579B96 /* Audio.playground */,
+				3CAD4CB12B1EB55B00579B96 /* SpeechRecognition.swift */,
+				3CAD4CAF2B1EA3A000579B96 /* Toggle.swift */,
+				3CAD4CAB2B1EA34B00579B96 /* Json.swift */,
+				3CAD4CA72B1D78FC00579B96 /* SettingsView.swift */,
 				3CC769BF2B1AABDB001B80E6 /* Assets.xcassets */,
 				3CC769C12B1AABDB001B80E6 /* Preview Content */,
+				3CAD4CBB2B20159600579B96 /* Audio.swift */,
 			);
 			path = Ballbert_IOS;
 			sourceTree = "<group>";
@@ -95,7 +117,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					3CC769B72B1AABDA001B80E6 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -137,8 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAD4CBC2B20159600579B96 /* Audio.swift in Sources */,
+				3CAD4CA82B1D78FC00579B96 /* SettingsView.swift in Sources */,
 				3CC769BE2B1AABDA001B80E6 /* ContentView.swift in Sources */,
+				3CAD4CAE2B1EA36900579B96 /* WebsocketClient.swift in Sources */,
+				3CAD4CB02B1EA3A000579B96 /* Toggle.swift in Sources */,
 				3CC769BC2B1AABDA001B80E6 /* Ballbert_IOSApp.swift in Sources */,
+				3CAD4CB22B1EB55B00579B96 /* SpeechRecognition.swift in Sources */,
+				3CAD4CAC2B1EA34B00579B96 /* Json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +209,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -241,6 +270,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -264,12 +294,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ballbert_IOS/Ballbert_IOS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ballbert_IOS/Preview Content\"";
 				DEVELOPMENT_TEAM = FWSPN35UP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ballbert;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to use the voice feature.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Audio is recorded to use the voice feature.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,8 +316,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ballbert.Ballbert-IOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ballbert.Ballbert;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.ballbert.ballbert-for-ios";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.ballbert.ballbert-for-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,12 +333,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Ballbert_IOS/Ballbert_IOS.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ballbert_IOS/Preview Content\"";
 				DEVELOPMENT_TEAM = FWSPN35UP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ballbert;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to use the voice feature.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Audio is recorded to use the voice feature.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,8 +355,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ballbert.Ballbert-IOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ballbert.Ballbert;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.ballbert.ballbert-for-ios";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = "com.ballbert.ballbert-for-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
